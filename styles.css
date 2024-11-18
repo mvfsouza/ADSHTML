@@ -1,183 +1,182 @@
-/* Geral */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #1c1c1c; /* Fundo escuro */
-  color: #ff0000; /* Texto vermelho */
-}
+  /* Geral */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c; /* Fundo escuro */
+    color: #ff0000; /* Texto vermelho */
+  }
 
-/* Cabeçalho */
-header {
-  background-color: #000000;
-  text-align: center;
-  padding: 40px; /* Aumenta o espaçamento interno */
-  color: #ff0000; /* Letras em vermelho */
-}
+  /* Cabeçalho */
+  header {
+    background-color: #000000;
+    text-align: center;
+    padding: 40px; 
+    color: #ff0000; 
+  }
 
-header h1 {
-  font-size: 3em; /* Aumenta o tamanho do título */
-  font-weight: bold; /* Deixa o texto em negrito */
-  margin-bottom: 10px; /* Espaçamento abaixo do título */
-}
+  header h1 {
+    font-size: 3em; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+  }
 
-header p {
-  font-size: 1.5em; /* Aumenta o tamanho da descrição */
-}
-#proximos-shows {
-  text-align: center;
-  padding: 20px;
-  background-color: #1c1c1c; /* Fundo escuro */
-  color: #ff0000; /* Texto vermelho */
-  margin-bottom: 20px;
-}
+  header p {
+    font-size: 1.5em; 
+  }
+  #proximos-shows {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: #ff0000; 
+    margin-bottom: 20px;
+  }
 
-#proximos-shows h2 {
-  color: #ff0000; /* Título em vermelho */
-  font-size: 2em;
-  margin-bottom: 10px;
-}
+  #proximos-shows h2 {
+    color: #ff0000; 
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
 
-#proximos-shows table {
-  width: 90%; /* Ocupa a maior parte da tela */
-  max-width: 800px;
-  margin: 0 auto; /* Centraliza a tabela */
-  border-collapse: collapse; /* Remove os espaços entre bordas */
-  background-color: #2e2e2e; /* Fundo da tabela */
-  border: 1px solid #444; /* Bordas da tabela */
-}
+  #proximos-shows table {
+    width: 90%; 
+    max-width: 800px;
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    background-color: #2e2e2e; 
+    border: 1px solid #444;
+  }
 
-#proximos-shows th, #proximos-shows td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #444; /* Bordas das células */
-  color: #ffffff; /* Texto branco */
-}
+  #proximos-shows th, #proximos-shows td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    color: #ffffff; 
+  }
 
-#proximos-shows th {
-  background-color: #ff4500; /* Fundo do cabeçalho */
-  color: #ffffff; /* Texto branco */
-  font-weight: bold;
-}
+  #proximos-shows th {
+    background-color: #ff4500; 
+    color: #ffffff; 
+    font-weight: bold;
+  }
 
-#proximos-shows tr:nth-child(even) {
-  background-color: #333; /* Fundo alternado para linhas pares */
-}
+  #proximos-shows tr:nth-child(even) {
+    background-color: #333; 
+  }
 
-#proximos-shows tr:hover {
-  background-color: #444; /* Destaque ao passar o mouse */
-}
+  #proximos-shows tr:hover {
+    background-color: #444;
+  }
 
-/* Localização */
-#localizacao {
-  text-align: center;
-  padding: 20px;
-  background-color: #2e2e2e;
-  margin-bottom: 20px;
-}
+  /* Localização */
+  #localizacao {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e2e;
+    margin-bottom: 20px;
+  }
 
-#localizacao h2 {
-  color: #ff0000; /* Letras em vermelho */
-  font-size: 2em;
-}
+  #localizacao h2 {
+    color: #ff0000; 
+    font-size: 2em;
+  }
 
-#localizacao iframe {
-  width: 90%; /* Responsivo */
-  max-width: 600px; /* Limite de largura */
-  height: 300px; /* Altura controlada */
-  border: none;
-  border-radius: 10px; /* Bordas arredondadas */
-}
+  #localizacao iframe {
+    width: 90%; 
+    max-width: 600px; 
+    height: 300px; 
+    border: none;
+    border-radius: 10px; 
+  }
 
-/* Galeria de Imagens */
-#imagens {
-  text-align: center;
-  padding: 20px;
-  background-color: #000000;
-}
 
-#imagens h2 {
-  color: #ff0000; /* Letras em vermelho */
-  font-size: 2em; /* Tamanho do texto */
-}
+  #imagens {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+  }
 
-.imagens-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-}
+  #imagens h2 {
+    color: #ff0000; 
+    font-size: 2em;
+  }
 
-.imagens-container img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  .imagens-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
 
-.imagens-container img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
-}
+  .imagens-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-/* Sobre */
-#about {
-  text-align: center;
-  padding: 20px;
-  background-color: #1c1c1c;
-}
+  .imagens-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+  }
 
-#about h2 {
-  color: #ff0000; /* Letras em vermelho */
-  font-size: 2em; /* Tamanho do texto */
-}
+  #about {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+  }
 
-#about p {
-  font-size: 1.2em;
-}
+  #about h2 {
+    color: #ff0000;
+    font-size: 2em; 
+  }
 
-.btn-ingresso {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff0000;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
+  #about p {
+    font-size: 1.2em;
+  }
 
-.btn-ingresso:hover {
-  background-color: #ff6347;
-  transform: scale(1.1);
-}
+  .btn-ingresso {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
 
-/* Vídeo */
-#music-video {
-  text-align: center; /* Centraliza o conteúdo */
-  padding: 20px;
-  background-color: #000000;
-}
+  .btn-ingresso:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+  }
 
-.youtube-card {
-  display: block;
-  max-width: 600px; /* Limite de largura */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  text-decoration: none;
-  color: white;
-  background-color: #333;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
-  transition: transform 0.3s ease;
-}
+  /* Vídeo */
+  #music-video {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+  }
 
-.youtube-card:hover {
-  transform: scale(1.05); /* Efeito ao passar o mouse */
-}
+  .youtube-card {
+    display: block;
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease;
+  }
 
-.youtube-thumbnail {
-  width: 100%; /* Ocupa toda a largura do card */
-  height: auto; /* Ajusta proporcionalmente */
-}
+  .youtube-card:hover {
+    transform: scale(1.05); 
+  }
+
+  .youtube-thumbnail {
+    width: 100%; 
+    height: auto; 
+  }
