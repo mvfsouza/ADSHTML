@@ -1,170 +1,183 @@
-
+/* Geral */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000000;
-  color: hsl(0, 100%, 50%);
+  background-color: #1c1c1c; /* Fundo escuro */
+  color: #ff0000; /* Texto vermelho */
 }
 
+/* Cabeçalho */
 header {
   background-color: #000000;
   text-align: center;
-  padding: 20px;
-  color: #ff4500;
+  padding: 40px; /* Aumenta o espaçamento interno */
+  color: #ff0000; /* Letras em vermelho */
 }
 
 header h1 {
-  font-size: 2.5em;
-  margin: 0;
+  font-size: 3em; /* Aumenta o tamanho do título */
+  font-weight: bold; /* Deixa o texto em negrito */
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
 
 header p {
-  font-size: 50px;
+  font-size: 1.5em; /* Aumenta o tamanho da descrição */
+}
+#proximos-shows {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1c; /* Fundo escuro */
+  color: #ff0000; /* Texto vermelho */
+  margin-bottom: 20px;
 }
 
-#localizacao {
-  padding: 20px;
+#proximos-shows h2 {
+  color: #ff0000; /* Título em vermelho */
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#proximos-shows table {
+  width: 90%; /* Ocupa a maior parte da tela */
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza a tabela */
+  border-collapse: collapse; /* Remove os espaços entre bordas */
+  background-color: #2e2e2e; /* Fundo da tabela */
+  border: 1px solid #444; /* Bordas da tabela */
+}
+
+#proximos-shows th, #proximos-shows td {
+  padding: 10px;
   text-align: center;
-  background-color: #2e2e2e; /* Fundo escuro */
+  border: 1px solid #444; /* Bordas das células */
   color: #ffffff; /* Texto branco */
 }
 
+#proximos-shows th {
+  background-color: #ff4500; /* Fundo do cabeçalho */
+  color: #ffffff; /* Texto branco */
+  font-weight: bold;
+}
+
+#proximos-shows tr:nth-child(even) {
+  background-color: #333; /* Fundo alternado para linhas pares */
+}
+
+#proximos-shows tr:hover {
+  background-color: #444; /* Destaque ao passar o mouse */
+}
+
+/* Localização */
+#localizacao {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e2e2e;
+  margin-bottom: 20px;
+}
+
 #localizacao h2 {
-  color: #ff4500; /* Cor laranja vibrante */
-  margin-bottom: 15px;
+  color: #ff0000; /* Letras em vermelho */
+  font-size: 2em;
 }
 
 #localizacao iframe {
-  margin-top: 20px;
+  width: 90%; /* Responsivo */
+  max-width: 600px; /* Limite de largura */
+  height: 300px; /* Altura controlada */
   border: none;
   border-radius: 10px; /* Bordas arredondadas */
-  width: 100%; /* Ajusta o mapa para o tamanho da tela */
-  max-width: 800px; /* Limita o tamanho máximo */
-  height: 450px;
 }
 
+/* Galeria de Imagens */
 #imagens {
-  padding: 20px;
   text-align: center;
-  background-color: #2e2e2e;
+  padding: 20px;
+  background-color: #000000;
 }
 
 #imagens h2 {
-  color: #ff4500;
-  margin-bottom: 15px;
+  color: #ff0000; /* Letras em vermelho */
+  font-size: 2em; /* Tamanho do texto */
 }
 
 .imagens-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
+  padding: 10px;
 }
 
 .imagens-container img {
   width: 200px;
   height: auto;
-  border: 3px solid #ff4500;
   border-radius: 10px;
-  transition: transform 1.5s, box-shadow 1.5s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .imagens-container img:hover {
-  transform: scale(2.05);
-  box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Sobre */
 #about {
-    text-align: center;
-    padding: 20px;
-}
-h2 {
-    font-size: 50px; 
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1c;
 }
 
-p {
-    font-size: 25px;
+#about h2 {
+  color: #ff0000; /* Letras em vermelho */
+  font-size: 2em; /* Tamanho do texto */
 }
 
-#about .btn-ingresso {
-    display: inline-block; 
-    padding: 15px 30px;
-    background-color: #ff4500; 
-    color: white; 
-    text-decoration: none;
-    font-size: 2.2em; 
-    font-weight: bold;
-    border-radius: 5px; 
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 10px rgba(255, 69, 0, 0.4); 
+#about p {
+  font-size: 1.2em;
 }
 
-#about .btn-ingresso:hover {
-    background-color: #ff6347;
-    transform: scale(1.1);
-    box-shadow: 0 8px 15px rgba(255, 69, 0, 0.6);
+.btn-ingresso {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.btn-ingresso:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+/* Vídeo */
 #music-video {
-    padding: 20px;
-    text-align: center;
-    background-color: #1c1c1c;
+  text-align: center; /* Centraliza o conteúdo */
+  padding: 20px;
+  background-color: #000000;
 }
 
 .youtube-card {
-    display: block;
-    max-width: 600px;
-    margin: 20px auto;
-    text-decoration: none;
-    color: white;
-    background-color: #333;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+  display: block;
+  max-width: 600px; /* Limite de largura */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+  transition: transform 0.3s ease;
 }
 
 .youtube-card:hover {
-    transform: scale(1.20);
+  transform: scale(1.05); /* Efeito ao passar o mouse */
 }
 
 .youtube-thumbnail {
-    width: 100%;
-    height: auto;
-}
-
-.youtube-info {
-    padding: 15px;
-    text-align: center;
-    background-color: #FF4500;
-}
-
-.youtube-info h3 {
-    margin: 0;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.youtube-info p {
-    margin: 10px 0 0;
-    font-size: 0.9em;
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333333; /* Fundo cinza escuro */
-  color: #ffffff; /* Texto branco */
-}
-
-footer a {
-  color: #ff4500; /* Laranja vibrante */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline;
+  width: 100%; /* Ocupa toda a largura do card */
+  height: auto; /* Ajusta proporcionalmente */
 }
