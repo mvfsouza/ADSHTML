@@ -1,13 +1,12 @@
-  /* Geral */
+
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c; /* Fundo escuro */
-    color: #ff0000; /* Texto vermelho */
+    background-color: #1c1c1c; 
+    color: #ff0000; 
   }
 
-  /* Cabeçalho */
   header {
     background-color: #000000;
     text-align: center;
@@ -135,22 +134,32 @@
   #about p {
     font-size: 1.2em;
   }
-
-  .btn-ingresso {
+  .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff0000;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    background-color: #ff4500; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+}
 
-  .btn-ingresso:hover {
-    background-color: #ff6347;
-    transform: scale(1.1);
-  }
+
+.btn:hover {
+    background-color: #ff6347; 
+    transform: scale(1.1); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.btn:active {
+    transform: scale(1.05); 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); 
+}
 
   /* Vídeo */
   #music-video {
