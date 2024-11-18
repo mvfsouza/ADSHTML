@@ -18,9 +18,30 @@ header h1 {
   font-size: 2.5em;
   margin: 0;
 }
-/*titulo Data: 18 de Novembro de 2024 | Local: Goiania */
+
 header p {
   font-size: 50px;
+}
+
+#localizacao {
+  padding: 20px;
+  text-align: center;
+  background-color: #2e2e2e; /* Fundo escuro */
+  color: #ffffff; /* Texto branco */
+}
+
+#localizacao h2 {
+  color: #ff4500; /* Cor laranja vibrante */
+  margin-bottom: 15px;
+}
+
+#localizacao iframe {
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px; /* Bordas arredondadas */
+  width: 100%; /* Ajusta o mapa para o tamanho da tela */
+  max-width: 800px; /* Limita o tamanho máximo */
+  height: 450px;
 }
 
 #imagens {
@@ -73,7 +94,7 @@ p {
     background-color: #ff4500; 
     color: white; 
     text-decoration: none;
-    font-size: 1.2em; 
+    font-size: 2.2em; 
     font-weight: bold;
     border-radius: 5px; 
     transition: all 0.3s ease;
@@ -132,7 +153,18 @@ p {
 
 /* Rodapé */
 footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #333333; /* Fundo cinza escuro */
+  color: #ffffff; /* Texto branco */
+}
+
+footer a {
+  color: #ff4500; /* Laranja vibrante */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
